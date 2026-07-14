@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บไซต์แรกของฉัน</title>
+    <!-- เชื่อมโยงไฟล์ Google Fonts (ฟอนต์ Prompt) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- เชื่อมโยงไฟล์ CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ส่วนหัวของเว็บไซต์ -->
+    <header>
+        <h1>ยินดีต้อนรับสู่เว็บไซต์ของฉัน</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">หน้าแรก</a></li>
+                <li><a href="#about">เกี่ยวกับ</a></li>
+                <li><a href="#contact">ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ส่วนเนื้อหาหลัก -->
+    <main>
+        <!-- Section: หน้าแรก -->
+        <section id="home">
+            <h2>หน้าแรก</h2>
+            <p>นี่คือเว็บไซต์แรกที่ฉันสร้างด้วย HTML และ CSS</p>
+            <img src="https://via.placeholder.com/400x300" alt="รูปภาพตัวอย่าง">
+        </section>
+
+        <!-- Section: เกี่ยวกับเรา -->
+        <section id="about">
+            <h2>เกี่ยวกับเรา</h2>
+            <p>เราเป็นนักศึกษา ปวส.1 สาขาคอมพิวเตอร์ธุรกิจ</p>
+            <div class="card-container">
+                <div class="card">
+                    <h3>ทักษะที่ 1</h3>
+                    <p>การเขียน HTML</p>
+                </div>
+                <div class="card">
+                    <h3>ทักษะที่ 2</h3>
+                    <p>การออกแบบด้วย CSS</p>
+                </div>
+                <div class="card">
+                    <h3>ทักษะที่ 3</h3>
+                    <p>การใช้ Git & GitHub</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: ติดต่อเรา (ฟอร์ม) -->
+        <section id="contact">
+            <h2>ติดต่อเรา</h2>
+            <form>
+                <label for="name">ชื่อ:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">อีเมล:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">ข้อความ:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">ส่งข้อความ</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- ส่วนท้ายของเว็บไซต์ -->
+    <footer>
+        <p>&copy; 2026 เว็บไซต์ของฉัน. สงวนลิขสิทธิ์.</p>
+    </footer>
+</body>
+</html>
